@@ -2,6 +2,8 @@
 簡単に言うと、速攻でLaravelの環境が手に入ります。</br>
 
 </br>
+
+
 ## 説明
 Windows10で構成しました、Laravelドッカー環境です。</br>
 内容物
@@ -29,7 +31,12 @@ key を生成する</br>
 php artisan key:generate</br>
 
 </br>
-## 使い方</br>
+
+
+## 使い方
+
+
+</br>
 ファイル位置は、Laravelファイルをiotとしておいてください</br>
 </br>
 laravel_project</br>
@@ -41,6 +48,8 @@ laravel_project</br>
 └── docker-php</br>
     └── Dockerfile</br>
 </br>
+
+
 ### Install
 ```sh
 git clone https://github.com/umaxiaotian/docker_laravel_env_hyahha.git
