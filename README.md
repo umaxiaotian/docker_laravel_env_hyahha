@@ -2,7 +2,7 @@
 簡単に言うと、速攻でLaravelの環境が手に入ります。
 
 
-## Description
+## 説明
 Windows10で構成しました、Laravelドッカー環境です。
 内容物
 nginx
@@ -29,7 +29,17 @@ key を生成する
 php artisan key:generate
 
 
-## Usage
+## 使い方
+ファイル位置は、Laravelファイルをiotとしておいてください
+laravel_project
+├── iot (Laravelファイル)
+├── docker-compose.yml
+├── docker-nginx
+│   ├── Dockerfile
+│   └── default.conf
+└── docker-php
+    └── Dockerfile
+
 ### Install
 ```sh
 git clone https://github.com/umaxiaotian/docker_laravel_env_hyahha.git
