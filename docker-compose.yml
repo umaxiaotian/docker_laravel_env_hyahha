@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+ web:
+    build: ./docker-nginx
+    ports:
+        - 80:80
+    depends_on:
+        - app
+    volumes:
+        - ./:/var/www/html
+        - ./docker-nginx/default.conf:/etc/nginx/conf.d/default.conf
+    links:
+        - app
+ app:
+    build: ./docker-php
+    depends_on:
+        - db
+    links:
+        - db
+    volumes:
+        - ./iot/:/var/www/html
+ db:
+    image: mysql:5.7.19
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root         0854
+      MYSQL_DATABASE: myblog_db         iot
+      MYSQL_USER: myblog_user           xiotian
+      MYSQL_PASSWORD: myblog_password   0854
