@@ -31,6 +31,7 @@ php artisan key:generate</br>
 </br>
 ## 使い方</br>
 ファイル位置は、Laravelファイルをiotとしておいてください</br>
+</br>
 laravel_project</br>
 ├── iot (Laravelファイル)</br>
 ├── docker-compose.yml</br>
@@ -39,7 +40,7 @@ laravel_project</br>
 │   └── default.conf</br>
 └── docker-php</br>
     └── Dockerfile</br>
-
+</br>
 ### Install
 ```sh
 git clone https://github.com/umaxiaotian/docker_laravel_env_hyahha.git
