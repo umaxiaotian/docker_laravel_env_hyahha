@@ -1,52 +1,55 @@
 # docker_laravel_env_hyahha
-ŠÈ’P‚ÉŒ¾‚¤‚ÆA‘¬U‚ÅLaravel‚ÌŠÂ‹«‚ªè‚É“ü‚è‚Ü‚·B</br>
+ç°¡å˜ã«è¨€ã†ã¨ã€é€Ÿæ”»ã§Laravelã®ç’°å¢ƒãŒæ‰‹ã«å…¥ã‚Šã¾ã™ã€‚</br>
 
 </br>
 
 
-## à–¾
-Windows10‚Å\¬‚µ‚Ü‚µ‚½ALaravelƒhƒbƒJ[ŠÂ‹«‚Å‚·B</br>
-“à—e•¨
+## èª¬æ˜
+Windows10ã§æ§‹æˆã—ã¾ã—ãŸã€Laravelãƒ‰ãƒƒã‚«ãƒ¼ç’°å¢ƒã§ã™ã€‚</br>
+å†…å®¹ç‰©
 nginx</br>
 php </br>
 mysql</br>
 </br>
-ƒ|[ƒg@NGINX -> 80</br>
+ãƒãƒ¼ãƒˆã€€NGINX -> 80</br>
 	MYSQL -> 3306</br>
-¦‚à‚µƒ|[ƒg‚ª‘¼‚Æ‹£‡‚µ‚Ä‚½‚çƒGƒ‰[‚É‚È‚è‚Ü‚·B</br>
+â€»ã‚‚ã—ãƒãƒ¼ãƒˆãŒä»–ã¨ç«¶åˆã—ã¦ãŸã‚‰ã‚¨ãƒ©ãƒ¼ã«ãªã‚Šã¾ã™ã€‚</br>
 </br>
-ƒgƒ‰ƒuƒ‹ƒVƒ…[ƒeƒBƒ“ƒO</br>
-Laravel 5.4: Fatal error: Uncaught Error: Class 'Illuminate\Foundation\Application' ‚ÌƒGƒ‰[</br>
+â—‡ãƒˆãƒ©ãƒ–ãƒ«ã‚·ãƒ¥ãƒ¼ãƒ†ã‚£ãƒ³ã‚°</br>
+Laravel 5.4: Fatal error: Uncaught Error: Class 'Illuminate\Foundation\Application' ã®ã‚¨ãƒ©ãƒ¼</br>
+http://kz-engineer-scrap.hatenablog.com/entry/2017/03/14/000158
+</br>
 $ composer install</br>
 $ composer dump-autoload</br>
-‚Å‰ğŒˆ
+ã§è§£æ±º
 </br>
 </br>
-500ƒGƒ‰[‚ªo‚é</br>
-env‚ª‚È‚¢‚©‚àBBB</br>
-‚È‚¯‚ê‚Î.env.example‚ğƒRƒs[‚µ‚Ä“¯‚¶ˆÊ’u‚É.env‚ÉƒŠƒl[ƒ€‚µ‚Ä“\‚è•t‚¯</br>
+500ã‚¨ãƒ©ãƒ¼ãŒå‡ºã‚‹</br>
+envãŒãªã„ã‹ã‚‚ã€‚ã€‚ã€‚</br>
+ãªã‘ã‚Œã°.env.exampleã‚’ã‚³ãƒ”ãƒ¼ã—ã¦åŒã˜ä½ç½®ã«.envã«ãƒªãƒãƒ¼ãƒ ã—ã¦è²¼ã‚Šä»˜ã‘</br>
+https://www.kabanoki.net/2524#env
 </br>
-RuntimeException ‚ª‚Å‚é</br>
-key ‚ğ¶¬‚·‚é</br>
+RuntimeException ãŒã§ã‚‹</br>
+key ã‚’ç”Ÿæˆã™ã‚‹</br>
 php artisan key:generate</br>
 
 </br>
 
 
-## g‚¢•û
+## ä½¿ã„æ–¹
 
 
 </br>
-ƒtƒ@ƒCƒ‹ˆÊ’u‚ÍALaravelƒtƒ@ƒCƒ‹‚ğiot‚Æ‚µ‚Ä‚¨‚¢‚Ä‚­‚¾‚³‚¢</br>
+ãƒ•ã‚¡ã‚¤ãƒ«ä½ç½®ã¯ã€Laravelãƒ•ã‚¡ã‚¤ãƒ«ã‚’iotã¨ã—ã¦ãŠã„ã¦ãã ã•ã„</br>
 </br>
 laravel_project</br>
-„¥„Ÿ„Ÿ iot (Laravelƒtƒ@ƒCƒ‹)</br>
-„¥„Ÿ„Ÿ docker-compose.yml</br>
-„¥„Ÿ„Ÿ docker-nginx</br>
-„    „¥„Ÿ„Ÿ Dockerfile</br>
-„    „¤„Ÿ„Ÿ default.conf</br>
-„¤„Ÿ„Ÿ docker-php</br>
-    „¤„Ÿ„Ÿ Dockerfile</br>
+â”œâ”€â”€ iot (Laravelãƒ•ã‚¡ã‚¤ãƒ«)</br>
+â”œâ”€â”€ docker-compose.yml</br>
+â”œâ”€â”€ docker-nginx</br>
+â”‚   â”œâ”€â”€ Dockerfile</br>
+â”‚   â””â”€â”€ default.conf</br>
+â””â”€â”€ docker-php</br>
+    â””â”€â”€ Dockerfile</br>
 </br>
 
 
@@ -57,4 +60,4 @@ cd docker_laravel_env_hyahha
 docker-compose build
 docker-compose up -d
 
-‚±‚ê‚Åg‚¦‚é‚Í‚¸‚Å‚·B
+ã“ã‚Œã§ä½¿ãˆã‚‹ã¯ãšã§ã™ã€‚
