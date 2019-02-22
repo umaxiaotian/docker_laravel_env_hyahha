@@ -1,44 +1,44 @@
 # docker_laravel_env_hyahha
-簡単に言うと、速攻でLaravelの環境が手に入ります。
+簡単に言うと、速攻でLaravelの環境が手に入ります。</br>
 
-
+</br>
 ## 説明
-Windows10で構成しました、Laravelドッカー環境です。
+Windows10で構成しました、Laravelドッカー環境です。</br>
 内容物
-nginx
-php 
-mysql
-
-ポート　NGINX -> 80
-	MYSQL -> 3306
-※もしポートが他と競合してたらエラーになります。
-
-◇トラブルシューティング
-Laravel 5.4: Fatal error: Uncaught Error: Class 'Illuminate\Foundation\Application' のエラー
-$ composer install
-$ composer dump-autoload
+nginx</br>
+php </br>
+mysql</br>
+</br>
+ポート　NGINX -> 80</br>
+	MYSQL -> 3306</br>
+※もしポートが他と競合してたらエラーになります。</br>
+</br>
+◇トラブルシューティング</br>
+Laravel 5.4: Fatal error: Uncaught Error: Class 'Illuminate\Foundation\Application' のエラー</br>
+$ composer install</br>
+$ composer dump-autoload</br>
 で解決
+</br>
+</br>
+500エラーが出る</br>
+envがないかも。。。</br>
+なければ.env.exampleをコピーして同じ位置に.envにリネームして貼り付け</br>
+</br>
+RuntimeException がでる</br>
+key を生成する</br>
+php artisan key:generate</br>
 
-
-500エラーが出る
-envがないかも。。。
-なければ.env.exampleをコピーして同じ位置に.envにリネームして貼り付け
-
-RuntimeException がでる
-key を生成する
-php artisan key:generate
-
-
-## 使い方
-ファイル位置は、Laravelファイルをiotとしておいてください
-laravel_project
-├── iot (Laravelファイル)
-├── docker-compose.yml
-├── docker-nginx
-│   ├── Dockerfile
-│   └── default.conf
-└── docker-php
-    └── Dockerfile
+</br>
+## 使い方</br>
+ファイル位置は、Laravelファイルをiotとしておいてください</br>
+laravel_project</br>
+├── iot (Laravelファイル)</br>
+├── docker-compose.yml</br>
+├── docker-nginx</br>
+│   ├── Dockerfile</br>
+│   └── default.conf</br>
+└── docker-php</br>
+    └── Dockerfile</br>
 
 ### Install
 ```sh
