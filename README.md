@@ -1,5 +1,5 @@
 # docker_laravel_env_hyahha
-簡単に言うと、速攻でLaravelの環境が手に入ります。</br>
+ドッカーファイル
 
 </br>
 
