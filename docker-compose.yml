@@ -8,7 +8,7 @@ services:
     depends_on:
         - app
     volumes:
-        - ./:/var/www/html
+        - ./iot/:/var/www/html
         - ./docker-nginx/default.conf:/etc/nginx/conf.d/default.conf
     links:
         - app
@@ -25,7 +25,7 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: root         0854
-      MYSQL_DATABASE: myblog_db         iot
-      MYSQL_USER: myblog_user           xiotian
-      MYSQL_PASSWORD: myblog_password   0854
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: myblog_db
+      MYSQL_USER: myblog_user
+      MYSQL_PASSWORD: myblog_password
